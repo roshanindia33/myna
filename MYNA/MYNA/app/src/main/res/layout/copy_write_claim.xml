@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doc.CopyWriteClaim">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F2F5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:text="Copyright Claim Policy"
+                android:textColor="#333333"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Understand our detailed policy and procedure regarding copyright claims on the MYNA app. We respect the intellectual property rights of others and provide a clear mechanism for you to report if you believe your copyrighted work has been infringed upon on our platform. This page will guide you on how to report infringements, our response, and other important information."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Key Policy Points"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Copyright Claim Policy will help you understand how to protect your rights on the MYNA platform and what steps to take for any alleged infringement."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="24dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. How to Report Copyright Infringement"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you believe your copyrighted work has been infringed upon on the MYNA app, please send us a detailed written notification. This notification must clearly include the following information:\n\n• Description of Copyrighted Work: Identify the specific copyrighted work that has been infringed (e.g., title of book, song name, image description). If multiple works are involved, provide a list for each.\n\n• Location of Infringing Material: Provide the exact URL or location on the MYNA app where the material that you claim is infringing your copyright appears. Including screenshots or any relevant identifiers would be helpful.\n\n• Your Contact Information: Include your full name, mailing address, telephone number, and email address so that we can contact you.\n\n• Good Faith Statement: A statement that you have a good faith belief that the disputed use of the material is not authorized by the copyright owner, its agent, or the law.\n\n• Statement of Truthfulness: A statement, made under penalty of perjury, that the information in your notification is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.\n\n• Digital or Physical Signature: A digital or physical signature of the copyright owner or a person authorized to act on their behalf.\n\nPlease email us with this detailed information so we can effectively process your complaint."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Our Response to Claims"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Upon receiving a valid and complete copyright infringement notification, we will take prompt action. This may include removing or disabling access to the allegedly infringing material from the MYNA app. We will contact the user who posted the infringing content and inform them about your claim. We reserve the right, in our sole discretion, to terminate the accounts of repeat infringers. Notifications that do not comply with our copyright policy or are incomplete may not be acted upon, or may experience delays in processing. Our priority is to ensure that MYNA remains a platform that respects all intellectual property rights."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Counter-Notification"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If your content has been removed or disabled due to a copyright infringement notification and you believe it was done by mistake or misidentification, you have the option to submit a counter-notification. A counter-notification must include the following:\n\n• Identification of the material that has been removed or to which access has been disabled and the location at which the material appeared on the app before it was removed or disabled.\n\n• A statement that you have a good faith belief that the material was removed or disabled as a result of mistake or misidentification of the material to be removed or disabled.\n\n• Your name, address, and telephone number.\n\n• A statement that you consent to the jurisdiction of the judicial district in which your address is located, or if your address is outside of India, for any judicial district in which the service provider may be found, and that you will accept service of process from the person who provided the original copyright infringement notification.\n\n• Your physical or electronic signature.\n\nPlease note that false counter-notifications may lead to legal consequences."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Designated Copyright Agent"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The designated copyright agent for receiving notifications of alleged infringement for the MYNA app is:\n\nEmail: myna.helpdesk@gmail.com\nLocation: India, Uttar Pradesh, Hamirpur – 210301\n\nPlease send all copyright-related communications exclusively to this designated agent. Failure to follow this process may delay or invalidate your claim."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5. Important Disclaimer"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This Copyright Claim Policy is provided for informational purposes only and does not constitute legal advice. If you have specific legal questions regarding copyright infringement, you should consult a qualified legal professional. The MYNA app is not responsible for any legal advice that may be derived from reading this policy. Our policy may be subject to change without prior notice, so please review this page regularly for the latest information. Thank you for your cooperation."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2025 MYNA. All rights reserved."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/footer_privacy_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Privacy Policy"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:textStyle="bold"
+                    android:onClick="openPrivacyFromFooter" />
+
+                <TextView
+                    android:id="@+id/footer_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | Terms"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:textStyle="bold"
+                    android:onClick="openTermsFromFooter" />
+
+                <TextView
+                    android:id="@+id/footer_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | Support"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:textStyle="bold"
+                    android:onClick="openSupportFromFooter" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

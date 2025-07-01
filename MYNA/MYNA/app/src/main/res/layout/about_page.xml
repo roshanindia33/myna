@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doc.About">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F2F5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:text="About MYNA"
+                android:textColor="#333333"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to MYNA, your trusted partner in smart investments! We are committed to simplifying the investment process, making it accessible, transparent, and rewarding for everyone. Our platform is designed to help you grow your wealth with ease and confidence. Discover how MYNA empowers you on your financial journey."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Vision"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At MYNA, our vision is to democratize investment, ensuring that financial growth opportunities are not exclusive but available to all. We believe in providing intuitive tools and reliable information to help you make informed decisions."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="24dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. How MYNA Works"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MYNA operates on a simple yet powerful principle: helping you invest in a disciplined manner to achieve your financial goals. Our app facilitates regular monthly investments into diversified portfolios designed for growth. We leverage advanced algorithms to identify promising investment avenues, ensuring your capital works efficiently for you. The process begins with a quick and secure onboarding, followed by easy setup of your monthly contributions. You can track your investments in real-time through our intuitive dashboard. We continuously monitor market trends and adjust strategies to optimize returns, always keeping your investment security paramount."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Risk Disclosure"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF0000"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Investing in financial markets inherently involves risks. The value of investments can fluctuate, and you may not get back the full amount you invested. MYNA aims to mitigate risks through diversification and strategic allocation, but we cannot guarantee returns or protect against all market volatility. Past performance is not indicative of future results. It’s crucial for you to understand these risks before investing. We encourage you to review all investment-related documents and seek independent financial advice if needed. Your decision to invest with MYNA should be based on your personal financial situation and risk tolerance."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Account &amp; Data Management"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MYNA provides you with full control over your account and personal data. You can update your profile information, manage your investment preferences, and review your transaction history directly within the app. We prioritize user control and transparency. For any specific data requests, such as accessing or rectifying your personal information, our support team is available to assist you promptly. We comply with all relevant data protection regulations to ensure your data is handled responsibly."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Data Security &amp; Privacy"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your data security and privacy are paramount at MYNA. We employ industry-standard encryption protocols and robust security measures to protect your personal and financial information from unauthorized access, alteration, disclosure, or destruction. Our systems are regularly audited, and we adhere to strict privacy policies. We do not share your data with third parties without your explicit consent, except as required by law. Rest assured, your trust is our top priority, and we continuously strive to enhance our security frameworks."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5. Accessing Your Funds"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="You can access your invested funds at any time. To initiate a withdrawal, simply navigate to the 'Withdrawal' section within the MYNA app and follow the on-screen instructions. We aim to process withdrawal requests promptly, typically within 2-3 business days, though processing times may vary depending on bank holidays and other external factors. Your funds will be transferred directly to your linked bank account. For any assistance with withdrawals or to check the status of a request, please contact our support team."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6. Account Deletion"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Should you decide to close your MYNA account, you have the option to delete your account and all associated personal data. To do this, please send a formal data deletion request to our support email: myna.helpdesk@gmail.com. Include your registered email address and phone number for verification. We will process your request in accordance with applicable data protection laws and our privacy policy, ensuring all your data is permanently removed from our systems. We aim to complete this process within a reasonable timeframe and will confirm the deletion once it's done."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7. Contact Us"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you have any questions, feedback, or need assistance, please don't hesitate to reach out to our dedicated support team. We're here to help you every step of the way. You can contact us via email at myna.helpdesk@gmail.com. We strive to respond to all inquiries within 24-48 business hours. Your satisfaction is our priority, and we look forward to assisting you in your investment journey."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2025 MYNA. All rights reserved."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="8dp">
+                <TextView
+                    android:id="@+id/footer_privacy_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Privacy Policy"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:textStyle="bold"
+                    android:onClick="openPrivacyFromFooter" />
+
+                <TextView
+                    android:id="@+id/footer_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | Terms"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:textStyle="bold"
+                    android:onClick="openTermsFromFooter" />
+
+                <TextView
+                    android:id="@+id/footer_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | Support"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:textStyle="bold"
+                    android:onClick="openSupportFromFooter" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

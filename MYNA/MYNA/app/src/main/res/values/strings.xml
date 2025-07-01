@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Myna</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_log_in">Already have an account? Log in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="myna">MYNA</string>
+    <string name="send_verification_mail">Send Verification Mail</string>
+    <string name="warning_tc">Investments are subject to market risks and returns are not guaranteed. Please invest based on your financial goals and risk tolerance. You may lose your entire investment. Use this app at your own responsibility and only invest what you can afford to lose.</string>
+    <string name="i_have_read_and_agree_to_the_terms_conditions_and_privacy_policy"><![CDATA[I have read and agree to the Terms & Conditions and Privacy Policy]]></string>
+    <string name="agree">Agree</string>
+    <string name="warning">⚠️ Warning…</string>
+    <string name="invest_of_month">Invest Of This Month</string>
+    <string name="investment_month">MYNA</string>
+    <string name="heading_tag1_dashboard">MYNA INVESTMENTS</string>
+
+    <string name="title_activity_login_activitywerwerfwe">LoginActivitywerwerfwe</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="todo">TODO</string>
+
+    <string name="privacy_policy_title">🔐 Privacy Policy</string>
+    <string name="privacy_policy_content">
+        &lt;h2&gt;&lt;b&gt;MYNA Privacy Policy&lt;/b&gt;&lt;/h2&gt;
+        \n\n
+        Your privacy is a cornerstone of our commitment to you. This Privacy Policy details how MYNA collects, utilizes, shares, and safeguards your personal information. By engaging with our application, you\'re agreeing to the practices outlined within this policy.
+        \n\n
+        &lt;h3&gt;&lt;b&gt;1. The Information We Collect&lt;/b&gt;&lt;/h3&gt;
+        \n\n
+        To offer and enhance our services, we gather the following categories of personal information from our users:
+        \n\n
+        &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Personal Identifiers:&lt;/b&gt; This includes your &lt;b&gt;name, email address, and mobile number&lt;/b&gt;. These pieces of information are fundamental for establishing and managing your account, ensuring a personalized and secure experience.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Financial Information:&lt;/b&gt; We collect your &lt;b&gt;bank account details&lt;/b&gt;. This information is strictly used to facilitate financial transactions, specifically for processing and remitting the returns and benefits from your investments directly to you.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Identification Documents:&lt;/b&gt; For rigorous verification and to comply with regulatory standards, we collect details from your &lt;b&gt;Aadhaar Card and PAN Card&lt;/b&gt;. These documents are crucial for confirming your identity and adhering to legal requirements.&lt;/li&gt;
+        &lt;/ul&gt;
+        \n\n
+        &lt;h3&gt;&lt;b&gt;2. How We Use Your Information&lt;/b&gt;&lt;/h3&gt;
+        \n\n
+        The data we collect serves specific, well-defined purposes, all aimed at ensuring the seamless functionality, robust security, and unwavering integrity of our services:
+        \n\n
+        &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Identity Verification:&lt;/b&gt; Your &lt;b&gt;email, mobile number, and name&lt;/b&gt; are primarily leveraged for identity verification. We utilize secure and trusted platforms like &lt;b&gt;Firebase&lt;/b&gt; to authenticate our users, which is a critical step in preventing fraudulent activities and maintaining a trustworthy user base.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Facilitating Investment Returns:&lt;/b&gt; Your &lt;b&gt;bank account details&lt;/b&gt; are exclusively dedicated to one core function: processing and transferring the profits and returns generated from your investments directly back into your designated account. We ensure that this process is secure and efficient.&lt;/li&gt;
+        &lt;/ul&gt;
+        \n\n
+        &lt;h3&gt;&lt;b&gt;3. How We Share Your Information&lt;/b&gt;&lt;/h3&gt;
+        \n\n
+        Protecting your data is our top priority, and we only share it under stringent, carefully controlled conditions:
+        \n\n
+        &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Authorized and Trusted Third Parties:&lt;/b&gt; Your information is shared &lt;b&gt;solely with authorized and trusted third-party partners&lt;/b&gt; who are integral to the delivery of our services. Each of these partners is bound by strict confidentiality agreements, legally obligated to use your information only for the specific purposes for which we\'ve shared it, and prohibited from using it for their own marketing or unrelated activities.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;No Unauthorized Sharing:&lt;/b&gt; We want to be unequivocally clear: &lt;b&gt;we will never share your information with any unauthorized, illegal, or unethical entities or services&lt;/b&gt;. The security and privacy of your data are paramount to us, and we maintain rigorous internal controls to prevent any such breaches. Your trust is invaluable, and we are committed to upholding it.&lt;/li&gt;
+        &lt;/ul&gt;
+        \n\n
+        &lt;h3&gt;&lt;b&gt;4. Our Commitment to Data Security&lt;/b&gt;&lt;/h3&gt;
+        \n\n
+        We implement a comprehensive array of robust security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction:
+        \n\n
+        &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Secure Server Storage:&lt;/b&gt; All collected information is meticulously stored on &lt;b&gt;secure servers&lt;/b&gt; fortified with advanced security protocols. We continuously monitor and update our security infrastructure to adapt to evolving threats.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Confidentiality Advisory:&lt;/b&gt; MYNA is steadfast in its commitment to your security. We will &lt;b&gt;never ask you to share any One-Time Passwords (OTPs) or other highly confidential information&lt;/b&gt; through unofficial channels. Always be vigilant against phishing attempts and ensure you are interacting only with our official platforms.&lt;/li&gt;
+        &lt;/ul&gt;
+        \n\n
+        &lt;h3&gt;&lt;b&gt;5. Your Right to Data Deletion&lt;/b&gt;&lt;/h3&gt;
+        \n\n
+        We believe you should have control over your personal data:
+        \n\n
+        &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Right to Erasure:&lt;/b&gt; You have the fundamental right to request the deletion of your personal data from our systems. If you wish to exercise this right, you can simply submit a request via email. We will process it promptly and efficiently, ensuring your data is removed in accordance with applicable laws and regulations. Note: certain legal or regulatory obligations might require us to retain specific information for a defined period.&lt;/li&gt;
+        &lt;/ul&gt;
+        \n\n
+        &lt;h3&gt;&lt;b&gt;Contact Information&lt;/b&gt;&lt;/h3&gt;
+        \n\n
+        For any inquiries regarding your privacy or data deletion requests, please don\'t hesitate to reach out to us:
+        \n\n
+        &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Email:&lt;/b&gt; myna.helpdesk@gmail.com&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Location:&lt;/b&gt; India, Uttar Pradesh, Hamirpur – 210301&lt;/li&gt;
+        &lt;/ul&gt;
+        \n\n
+        &lt;h3&gt;&lt;b&gt;Your Consent&lt;/b&gt;&lt;/h3&gt;
+        \n\n
+        By continuing to use this application, you are indicating your full and unequivocal &lt;b&gt;agreement to all the terms, conditions, and the Privacy Policy&lt;/b&gt; detailed above. Your ongoing use signifies your comprehensive understanding and acceptance of our data handling practices and our dedication to your privacy.
+        \n\n
+        We are dedicated to maintaining the highest standards of data privacy and security. Thank you for trusting MYNA with your information.
+    </string>
+
+    <string name="about_myna_intro">Welcome to MYNA, a monthly investment app designed to help you grow your wealth. Our goal is to empower investors by providing a seamless experience with monthly investment opportunities and potential returns at the end of each month.</string>
+
+    <string name="how_myna_works_content">
+        &lt;p&gt;MYNA operates as your personal fund manager, strategically allocating your investments across diversified assets:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Fast-Performing Stocks:&lt;/b&gt; A portion of your investment is placed into high-performing stocks identified for strong returns within a single month.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Trading:&lt;/b&gt; We also employ active trading strategies to capitalize on market opportunities.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Third-Party Services &amp; Funds:&lt;/b&gt; To further diversify your portfolio, we invest in trusted third-party services and other private funds.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;At the end of each month, the accumulated returns are calculated. We return your &lt;b&gt;principal investment amount&lt;/b&gt; and deduct a &lt;b&gt;0.5% charge on the returns&lt;/b&gt;. This 0.5% includes our service fees, operational charges, and applicable taxes.&lt;/p&gt;
+        &lt;p&gt;Please note, a &lt;b&gt;transfer fee of approximately 0.15% to 0.2%&lt;/b&gt; will also be deducted from your principal amount. This fee is subject to change in the future. For more detailed information, please refer to our Tax Charge Report.&lt;/p&gt;
+    </string>
+
+    <string name="risk_disclosure_content">
+        &lt;p&gt;Investing inherently involves risk, and MYNA is no exception. It\'s crucial to understand that:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;At times, &lt;b&gt;losses may occur.&lt;/b&gt;&lt;/li&gt;
+            &lt;li&gt;While some percentage of your investment may be lost, in &lt;b&gt;rare circumstances, your entire principal amount could be lost.&lt;/b&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;&lt;b&gt;Investors should invest at their own risk and discretion.&lt;/b&gt; By using MYNA, you acknowledge and understand the inherent risks associated with this investment, including the potential for loss.&lt;/p&gt;
+    </string>
+
+    <string name="account_data_management_content">
+        &lt;p&gt;At MYNA, we prioritize your security and convenience:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;Account Creation:&lt;/b&gt; To create a MYNA account, we utilize your &lt;b&gt;email, password, and phone number&lt;/b&gt;. In the future, we will also offer sign-in options through Google and other popular login systems.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Personal Information:&lt;/b&gt; We collect your &lt;b&gt;name, email, mobile number, bank account details&lt;/b&gt;, and government identification details such as &lt;b&gt;PAN Card and Aadhaar Card&lt;/b&gt;. This information is essential for verifying your account and efficiently processing your returns. Additional details may be requested in the future.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Use of Information:&lt;/b&gt; Your &lt;b&gt;email, name, and mobile number&lt;/b&gt; are used primarily for identity verification through authentication systems like Firebase. Your &lt;b&gt;bank account details&lt;/b&gt; are securely stored in our database to facilitate the direct transfer of your investment returns to your account.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Data Sharing:&lt;/b&gt; We share your information &lt;b&gt;only with authorized and trusted third-party services&lt;/b&gt;. We do not share information with any third parties that do not adhere to government regulations or have an illegal past.&lt;/li&gt;
+        &lt;/ul&gt;
+    </string>
+
+    <string name="data_security_privacy_content">
+        &lt;p&gt;Your privacy is our utmost priority:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;We neither request nor provide any &lt;b&gt;OTPs (One-Time Passwords)&lt;/b&gt; on behalf of the app.&lt;/li&gt;
+            &lt;li&gt;We &lt;b&gt;strongly advise against sharing any confidential information&lt;/b&gt; with anyone.&lt;/li&gt;
+            &lt;li&gt;The MYNA app does not support or engage in user tracking or any other illegal activities that violate government regulations.&lt;/li&gt;
+            &lt;li&gt;The MYNA app is &lt;b&gt;not recommended for use by children under 13 years of age.&lt;/b&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    </string>
+
+    <string name="accessing_funds_content">
+        &lt;ul&gt;
+            &lt;li&gt;You can easily track your invested amount within your in-app wallet.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Early Withdrawal:&lt;/b&gt; If you request to withdraw your investment before the month\'s end (via email), it may take two to three business days to process your refund. The returned amount will reflect what is available at that time – if there\'s a loss, it will be the amount after the loss; if there\'s a profit, it will be the amount with the accrued return.&lt;/li&gt;
+            &lt;li&gt;To initiate a withdrawal, you must send us a request via email.&lt;/li&gt;
+        &lt;/ul&gt;
+    </string>
+
+    <string name="account_deletion_content">You can request to delete your account from the MYNA app. To do so, please send us an email through our support or contact details.</string>
+
+    <string name="contact_us_content">
+        For any questions or assistance, please feel free to reach out:&lt;br/&gt;
+        &lt;b&gt;Email:&lt;/b&gt; myna.helpdesk@gmail.com&lt;br/&gt;
+        &lt;b&gt;Location:&lt;/b&gt; India, Uttar Pradesh, Hamirpur – 210301
+    </string>
+
+    <string name="thank_you_message">Thank you for choosing MYNA! We look forward to helping you achieve your financial goals.</string>
+
+    <string name="copyright_intro">At MYNA, we respect the intellectual property rights of others and expect our users to do the same. This Copyright Claims Policy outlines our procedures for addressing alleged copyright infringement on our platform.</string>
+
+    <string name="copyright_reporting_content">
+        &lt;p&gt;If you believe that your copyrighted work has been copied and is accessible on the MYNA app in a way that constitutes copyright infringement, please notify our designated Copyright Agent immediately. To be effective, your notification must be a written communication that includes substantially the following:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;b&gt;A physical or electronic signature&lt;/b&gt; of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Identification of the copyrighted work&lt;/b&gt; claimed to have been infringed, or, if multiple copyrighted works are covered by a single notification, a representative list of such works.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Identification of the material that is claimed to be infringing&lt;/b&gt; or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit MYNA to locate the material (e.g., specific screens, sections, or content within the app).&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;Information reasonably sufficient to permit MYNA to contact the complaining party&lt;/b&gt;, such as an address, telephone number, and, if available, an electronic mail address.&lt;/li&gt;
+            &lt;li&gt;A statement that the complaining party has a &lt;b&gt;good faith belief&lt;/b&gt; that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law.&lt;/li&gt;
+            &lt;li&gt;A statement that the information in the notification is &lt;b&gt;accurate&lt;/b&gt;, and under penalty of perjury, that the complaining party is &lt;b&gt;authorized to act on behalf of the owner&lt;/b&gt; of an exclusive right that is allegedly infringed.&lt;/li&gt;
+        &lt;/ul&gt;
+    </string>
+
+    <string name="copyright_response_content">
+        &lt;p&gt;Upon receipt of a valid and complete copyright infringement notification, MYNA will:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Promptly investigate the claim.&lt;/li&gt;
+            &lt;li&gt;Remove or disable access to the infringing material.&lt;/li&gt;
+            &lt;li&gt;Take reasonable steps to notify the user who posted the allegedly infringing material.&lt;/li&gt;
+            &lt;li&gt;Terminate the accounts of repeat infringers in appropriate circumstances.&lt;/li&gt;
+        &lt;/ul&gt;
+    </string>
+
+    <string name="copyright_counter_notification_content">
+        &lt;p&gt;If you believe that your material was removed or disabled by mistake or misidentification, you may send a written counter-notification to our Copyright Agent. To be effective, your counter-notification must include substantially the following:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Your physical or electronic signature.&lt;/li&gt;
+            &lt;li&gt;Identification of the material that has been removed or to which access has been disabled and the location at which the material appeared before it was removed or access disabled.&lt;/li&gt;
+            &lt;li&gt;A statement under penalty of perjury that you have a good faith belief that the material was removed or disabled as a result of mistake or misidentification of the material to be removed or disabled.&lt;/li&gt;
+            &lt;li&gt;Your name, address, and telephone number, and a statement that you consent to the jurisdiction of the federal district court for the judicial district in which the address is located (or if you are outside the United States, that you consent to jurisdiction of any judicial district in which MYNA may be found), and that you will accept service of process from the person who provided the original notification of infringement.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;Upon receipt of a valid counter-notification, MYNA may, in its sole discretion, reinstate the material unless the party who sent the original notification files an action seeking a court order to restrain the user from engaging in infringing activity related to the material on the MYNA app.&lt;/p&gt;
+    </string>
+
+    <string name="copyright_agent_content">
+        Please send all copyright infringement notifications and counter-notifications to our designated Copyright Agent:&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Email:&lt;/b&gt; myna.helpdesk@gmail.com&lt;br/&gt;
+        &lt;b&gt;Location:&lt;/b&gt; India, Uttar Pradesh, Hamirpur – 210301
+    </string>
+
+    <string name="copyright_disclaimer_content">
+        &lt;p&gt;This policy is designed to comply with applicable copyright laws. However, MYNA does not provide legal advice. If you have questions about copyright law or whether your material is protected, please consult a legal professional.&lt;/p&gt;
+    </string>
+
+    <string name="invest_center">Invest Center</string>
+    <string name="this_month_s_opportunity">This Month\'s Opportunity: </string>
+    <string name="_5_15_returns">5-15% Returns</string>
+    <string name="make_your_money_work_for_you_smart_investing_can_earn_you_monthly_returns_of_up_to_15">Make your money work for you. Smart investing can earn you monthly returns of up to 15%.</string>
+    <string name="start_investing">Start Investing</string>
+    <string name="monthly_investment_insight">Monthly Investment Insight</string>
+    <string name="discover_top_trending_stocks_offering_10_15_projected_return">Discover top trending stocks offering 10-15% projected return.</string>
+    <string name="large_cap_funds">Large Cap Funds</string>
+    <string name="mid_cap_funds">Mid Cap Funds</string>
+    <string name="small_cap_funds">Small Cap Funds</string>
+    <string name="myna_investment_news">MYNA Investment News</string>
+    <string name="government_unveils_new_capital_gain_tax_relief_for_sip_investors">Government unveils new capital gain tax relief for SIP investors.</string>
+    <string name="visualize_your_returns">Visualize Your Returns</string>
+    <string name="dynamic_graphics_help_you_see_growth_trends_easily">Dynamic graphics help you see growth trends easily.</string>
+    <string name="previous_month_returns_dashboard">Previous Month Returns</string>
+    <string name="smart_decisions_bring_solid_returns_dashboard">Smart decisions bring solid returns!</string>
+    <string name="_12_8">12.8%</string>
+    <string name="investments_of_last_month_yielded_impressive_results_stay_consistent_to_keep_your_portfolio_growing">Investments of last month yielded impressive results. Stay consistent to keep your portfolio growing!</string>
+
+    <string name="safe_investor">Be a Safe Investor</string>
+    <string name="prefer_to_generate_monthly_better_income_n_avoid_highly_risky_investments_n_diversify_across_4_5_asset_classes_n_stick_to_long_term_low_money_investment_n_never_invest_without_exit_plan">Prefer to generate monthly better income\nAvoid highly risky investments\nDiversify across 4-5 asset classes\nStick to long-term, low-money investment\nNever invest without an exit plan</string>
+    <string name="government_certified_dashboard">Government Certified</string>
+    <string name="invest_with_trust_confidence_dashboard">Invest with Trust &amp; Confidence</string>
+    <string name="backed_by_government_regulations_and_certified_protocols_myna_ensures_your_investments_are_safe_transparent_and_fully_compliant_join_50_000_trusted_investors_who_believe_in_secure_growth">Backed by government regulations and certified protocols, MYNA ensures your investments are safe, transparent, and fully compliant. Join 50,000+ trusted investors who believe in secure growth.</string>
+    <string name="facebook_social">Facebook</string>
+    <string name="twitter_social">Twitter</string>
+    <string name="instagram_social">Instagram</string>
+    <string name="linkedin_social">LinkedIn</string>
+    <string name="terms_conditions_footer">Terms &amp; Conditions</string>
+    <string name="privacy_policy_footer">Privacy Policy</string>
+    <string name="about_footer">About</string>
+    <string name="developer_info_footer">Developer Info</string>
+    <string name="investment_suggestion_footer">Investment Suggestion</string>
+    <string name="invest_now_btn_quick">Invest Now</string>
+    <string name="invest_now_desc_quick">Start a new investment</string>
+    <string name="withdraw_btn">Withdraw</string>
+    <string name="withdraw_desc">Withdraw your earnings</string>
+    <string name="add_funds_btn">Portfolio</string>
+    <string name="add_funds_desc">Add more money to your account</string>
+    <string name="view_history_btn">Past Returns</string>
+    <string name="view_history_desc">View your transaction history</string>
+
+    <string name="government_certified_tag_card">CERTIFIED &amp; Trust</string>
+    <string name="government_certified_link">Government Certified</string>
+    <string name="safe_investor_tag_card">Be a Safe Investor</string>
+    <string name="safe_investor_tips_list_card">"• Prefer to generate monthly better income\n• Avoid highly risky investments\n• Diversify across 4-5 asset classes\n• Stick to long-term, low-money investment\n• Never invest without an exit plan"</string>
+    <string name="copyright_claims_footer">Copyright Claims</string>
+    <string name="support_footer">Support</string>
+    <string name="proud_indian_made_in_india">🇮🇳 Proud to be Indian | Made in India</string>
+
+    <string name="opportunity_title_1">High-Growth Tech Stocks</string>
+    <string name="opportunity_desc_1">Explore emerging tech companies with 20% + projected annual growth.</string>
+    <string name="opportunity_title_2">Sustainable Energy Bonds</string>
+    <string name="opportunity_desc_2">Invest in green energy projects for stable long-term returns.</string>
+    <string name="opportunity_title_3">Real Estate REITs</string>
+    <string name="opportunity_desc_3">Diversify with commercial property investments, 8-10% yield.</string>
+    <string name="opportunity_title_4">Global Market Index Funds</string>
+    <string name="opportunity_desc_4">Gain exposure to top global economies with low-cost index funds.</string>
+
+    <string name="invest_now_desc">Invest your money smartly and achieve your goals.</string>
+    <string name="invest_now_btn">Invest Now</string>
+    <string name="previous_month_returns">Previous Month\'s Return</string>
+    <string name="smart_decisions_bring_solid_returns">Right Decisions Bring Solid Returns</string>
+    <string name="smart_tips_for_safe_investors">Why Choose Myna For Investing</string>
+    <string name="safe_investor_tag">Investment Securities</string>
+    <string name="safe_investor_tips_list">1. Diversify your portfolio.\n2. Invest regularly.\n3. Understand market risks.\n4. Review your performance frequently.</string>
+    <string name="government_certified_tag">CERTIFIED &amp; TRUST</string>
+    <string name="invest_with_trust_confidence">Invest with Trust and Confidence</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about">About Us</string>
+    <string name="developer_info">Developer Info</string>
+    <string name="investment_suggestion">Investment Suggestion</string>
+    <string name="copyright_claims">Copyright Claims</string>
+    <string name="support">Support</string>
+    <string name="and">and</string>
+    <!--    menuleft-->
+    <string name="menu_home">Dashboard</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Videos</string>
+
+    <string name="smart_advisor">Smart Advisor</string>
+    <string name="ai_assistant">AI Assistant</string>
+    <string name="virtual_portfolio">Virtual Portfolio</string>
+    <string name="learning_hub">Learning Hub</string>
+
+    <string name="help_center">Help Center</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="about_app">About App</string>
+    <string name="logout">Logout</string>
+
+    <string name="nav_header_title">ID-</string>
+    <string name="nav_header_subtitle">user.email@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="invest_smarter_grow_faster">Invest Smarter, Grow Faster</string>
+
+</resources>

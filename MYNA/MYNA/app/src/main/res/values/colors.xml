@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="ffffff">#FFFFFF</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#BDBDBD</color>
+    <color name="gray_dark">#616161</color>
+    <color name="gray_background">#EEEEEE</color>
+    <color name="gray_divider">#E0E0E0</color>
+    <color name="gray_standard">#9E9E9E</color>
+    <!--    return history page -->
+    <color name="green_positive">#28A745</color>
+    <color name="red_negative">#D32F2F</color>
+    <color name="text_dark">#212121</color>
+    <color name="text_medium">#555555</color>
+    <color name="background_light">#F0F2F5</color>
+    <!--    portfolio-->
+
+    <color name="text_dark_primary">#212121</color>
+    <color name="text_medium_secondary">#616161</color>
+    <color name="text_light_hint">#757575</color>
+    <color name="text_placeholder">#888888</color>
+    <color name="accent_color">#FF5722</color>
+    <color name="header_gradient_start">#00BCD4</color>
+    <color name="header_gradient_end">#673AB7</color>
+    <color name="button_gradient_start">#4CAF50</color>
+    <color name="button_gradient_end">#2E7D32</color>
+    <color name="button_blue_gradient_start">#2196F3</color>
+    <color name="button_blue_gradient_end">#1976D2</color>
+    <color name="chart_line_color">#4CAF50</color>
+    <color name="chart_fill_color">#C8E6C9</color>
+    <!--    news-->
+
+    <!-- UI Background and Text Colors -->
+    <color name="text_date">#9E9E9E</color> <!-- A slightly darker grey for dates -
+
+<!-monthlyinvestment  instight-->
+    <color name="accent_color_dark">#D84315</color> <!-- Darker orange for better contrast -->
+    <!-- Gradients for Header (NEW for this page) -->
+    <color name="header_gradient_red_orange_start">#FF5722</color> <!-- Deep Orange -->
+    <color name="header_gradient_red_orange_end">#FFC107</color>   <!-- Amber -->
+    <!-- Gradients for Buttons (Updated for stronger look) -->
+    <color name="button_gradient_green_dark_start">#388E3C</color> <!-- Dark Green -->
+    <color name="button_gradient_green_dark_end">#1B5E20</color>   <!-- Even Darker Green -->
+    <!--    invest center-->
+    <color name="accent_green">#388E3C</color>
+    <color name="blue_primary">#0D47A1</color>
+    <color name="header_gradient_blue_purple_start">#42A5F5</color>
+    <color name="header_gradient_blue_purple_end">#673AB7</color>
+    <color name="button_gradient_blue_dark_start">#1976D2</color>
+    <color name="button_gradient_blue_dark_end">#0D47A1</color>
+
+    <!-- UI Background and Text Colors -->
+    <color name="background_light_grey">#F0F2F5</color> <!-- Main background -->
+    <color name="card_background_white">#FFFFFF</color> <!-- Card background -->
+    <color name="text_info">#2196F3</color> <!-- Blue for general info/validation -->
+    <!-- Accent Colors -->
+    <color name="icon_color_dark">#424242</color> <!-- Dark grey for icons -->
+    <color name="header_gradient_gold_blue_start">#FFD700</color> <!-- Gold -->
+    <color name="header_gradient_gold_blue_end">#42A5F5</color>   <!-- Light Blue -->
+    <color name="button_gradient_green_gold_start">#4CAF50</color> <!-- Green -->
+    <color name="button_gradient_green_gold_end">#FFD700</color>   <!-- Gold -->
+    <!--    account -->
+
+    <color name="text_white_light">#E0E0E0</color>
+    <color name="icon_dark_accent">#0D47A1</color>
+    <color name="icon_dark_subtle">#757575</color>
+    <color name="icon_add_bank">#4CAF50</color>
+    <color name="background_gradient_light_blue_purple_start">#64B5F6</color>
+    <color name="background_gradient_light_blue_purple_end">#B39DDB</color>
+    <color name="button_background_add_bank_stroke">#E0E0E0</color>
+    <color name="button_text_add_bank">#0D47A1</color>
+    <!--    account form-->
+
+    <color name="button_gradient_blue_start">#42A5F5</color>
+    <color name="button_gradient_blue_end">#1976D2</color>
+    <color name="edittext_border_color">#E0E0E0</color>
+    <color name="edittext_focus_color">#42A5F5</color>
+    <!--    Dashboard colors-->
+
+
+    <color name="colorPrimary">#26A69A</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="icon_light_active">#26A69A</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="error_red">#F44336</color>
+    <color name="card_background_light">#FFFFFF</color>
+    <color name="card_background_dark">#303030</color>
+    <color name="dashboard_background">#F8F9FA</color>
+    <color name="accent_positive_growth">#4CAF50</color>
+    <color name="accent_negative_loss">#F44336</color>
+    <color name="shimmer_start_color">#E0E0E0</color>
+    <color name="shimmer_end_color">#F5F5F5</color>
+    <color name="switch_thumb_on">@color/colorPrimary</color>
+    <color name="switch_track_on">#8026A69A</color>
+    <color name="switch_thumb_off">#BDBDBD</color>
+    <color name="switch_track_off">#80BDBDBD</color>
+
+    <!--    withdraw page-->
+    <color name="text_accent_blue">#FF2196F3</color>
+    <color name="text_dark_secondary">#FF757575</color>
+    <color name="text_error_red">#FFF44336</color>
+    <color name="status_pending">#FFFFA000</color>
+    <color name="status_failed">#FFF44336</color>
+    <color name="status_completed">#FF4CAF50</color>
+
+
+</resources>

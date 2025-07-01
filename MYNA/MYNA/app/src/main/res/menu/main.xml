@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Group 1: Account Management -->
+    <item
+        android:id="@+id/user_profile"
+        android:orderInCategory="100"
+        android:title="My Profile"
+        android:icon="@drawable/menuright_ic_menu_profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/user_account"
+        android:orderInCategory="101"
+        android:title="Bank Account"
+        android:icon="@drawable/menuright_ic_menu_bank_account"
+        app:showAsAction="never" />
+
+    <!-- Group 2: Investment & App Insights -->
+    <item
+        android:id="@+id/investment_history_menu_item"
+        android:orderInCategory="102"
+        android:title="Investment History"
+        android:icon="@drawable/menuright_ic_menu_history"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/news_updates_menu_item"
+        android:orderInCategory="103"
+        android:title="News &amp; Updates"
+        android:icon="@drawable/menuright_ic_menu_news"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/monthly_insights_menu_item"
+        android:orderInCategory="104"
+        android:title="Monthly Insights"
+        android:icon="@drawable/menuright_ic_menu_insights"
+        app:showAsAction="never" />
+
+    <!-- Group 3: Support & Settings -->
+
+    <item
+        android:id="@+id/contact_info"
+        android:orderInCategory="106"
+        android:title="Help &amp; Support"
+        android:icon="@drawable/menuright_ic_menu_support"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/legal_terms_menu_item"
+        android:orderInCategory="107"
+        android:title="Legal &amp; Terms"
+        android:icon="@drawable/menuright_ic_menu_legal"
+        app:showAsAction="never" />
+
+    <!-- Group 4: Logout -->
+
+</menu>

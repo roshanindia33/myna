@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doc.Support">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F2F5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:text="MYNA Support"
+                android:textColor="#333333"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to the MYNA Support Page! We're here to help you with any questions, issues, or feedback you might have. Your smooth investment journey is our priority."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How Can We Help You?"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We've organized common queries and support options to get you the assistance you need quickly."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="24dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. General Inquiries &amp; Feedback"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_general_inquiries_content" android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Have a question about how MYNA works, or just want to share your thoughts?\n\n&lt;b&gt;Email Us:&lt;/b&gt; For general questions or feedback, please reach out to us at &lt;b&gt;myna.helpdesk@gmail.com&lt;/b&gt;. We aim to respond within 24-48 business hours."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2. Account &amp; Technical Support"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_account_tech_content" android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you're facing issues with your MYNA account, app functionality, or technical glitches:\n\n&lt;ul&gt;\n&lt;li&gt;&lt;b&gt;Account Access:&lt;/b&gt; Problems logging in, forgotten password, or issues with your profile details.&lt;/li&gt;\n&lt;li&gt;&lt;b&gt;App Functionality:&lt;/b&gt; The app isn\'t working as expected, crashes, or specific features aren\'t loading.&lt;/li&gt;\n&lt;li&gt;&lt;b&gt;Technical Assistance:&lt;/b&gt; Any other technical issues preventing you from using the app effectively.&lt;/li&gt;\n&lt;/ul&gt;\n\nPlease email us with a detailed description of your issue, including screenshots if possible, at &lt;b&gt;myna.helpdesk@gmail.com&lt;/b&gt;. This helps us understand and resolve your problem faster."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3. Investment &amp; Withdrawal Queries"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_investment_withdrawal_content" android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="For questions related to your investments, returns, or withdrawals:\n\n&lt;ul&gt;\n&lt;li&gt;&lt;b&gt;Investment Status:&lt;/b&gt; Questions about your current monthly investment.&lt;/li&gt;\n&lt;li&gt;&lt;b&gt;Return Calculation:&lt;/b&gt; Clarification on how returns are calculated or applied.&lt;/li&gt;\n&lt;li&gt;&lt;b&gt;Withdrawal Requests:&lt;/b&gt; For initiating a withdrawal or checking the status of a previous request.&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;b&gt;To request a withdrawal, please send an email to &lt;b&gt;myna.helpdesk@gmail.com&lt;/b&gt; with your account details and the withdrawal amount. Please note that withdrawals may take &lt;b&gt;two to three business days&lt;/b&gt; to process.&lt;/b&gt;\n\nFor any other investment-related queries, use the same email: &lt;b&gt;myna.helpdesk@gmail.com&lt;/b&gt;."
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. Data Deletion Requests"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_data_deletion_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="We believe you should have control over your personal data. If you wish to delete your MYNA account and all associated personal data from our systems:\n\n&lt;ul&gt;\n&lt;li&gt;Please send a formal data deletion request via email to &lt;b&gt;myna.helpdesk@gmail.com&lt;/b&gt;.&lt;/li&gt;\n&lt;li&gt;In your email, clearly state your intent to delete your account and provide your registered email address and phone number for verification.&lt;/li&gt;\n&lt;li&gt;We will process your request promptly and confirm the deletion of your data in accordance with applicable laws and our Privacy Policy.&lt;/li&gt;\n&lt;/ul&gt;"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5. Copyright Claims"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_copyright_claims_content" android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you believe your copyrighted work has been infringed upon by content on the MYNA app, please refer to our &lt;b&gt;Copyright Claims Policy&lt;/b&gt; for detailed instructions on how to submit a formal notification. All copyright-related communications should be sent to:\n\n&lt;b&gt;Email:&lt;/b&gt; myna.helpdesk@gmail.com&lt;br/&gt;&lt;b&gt;Location:&lt;/b&gt; India, Uttar Pradesh, Hamirpur – 210301"
+                        android:textSize="15sp"
+                        android:textColor="#333333"
+                        android:lineSpacingExtra="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Commitment"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_commitment_content" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are dedicated to providing you with reliable support and ensuring your experience with MYNA is positive and secure. We appreciate your patience as we work to address all inquiries.\n\nIndia, Uttar Pradesh, Hamirpur – 210301"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="24dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="© 2025 MYNA "
+                    android:textSize="14sp"
+                    android:textColor="#555555" />
+
+                <TextView
+                    android:id="@+id/footer_privacy_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | Privacy Policy"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:textStyle="bold"
+                    android:onClick="openPrivacyFromFooter" />
+
+                <TextView
+                    android:id="@+id/footer_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" | Terms"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:textStyle="bold"
+                    android:onClick="openTermsFromFooter" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

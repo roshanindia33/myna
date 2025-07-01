@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "417069768881",
+    "project_id": "mynainvestor",
+    "storage_bucket": "mynainvestor.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417069768881:android:d1061df88f7cdbc80cc290",
+        "android_client_info": {
+          "package_name": "com.myna.myna"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGsmdH9BNwnTfZtoKyGyW1eeQgpN0yEkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

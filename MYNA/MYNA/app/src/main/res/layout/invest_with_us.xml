@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="@drawable/bankaccount_background_gradient_light_blue_purple"
+    tools:context=".servicepage.InvestWithUs"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unlock Your Financial Future with MYNA"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to a smarter way to invest. At MYNA, we believe in empowering you to achieve financial security and growth, one strategic monthly investment at a time."
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:lineSpacingExtra="5dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <Space android:layout_width="match_parent" android:layout_height="12dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp"
+        app:contentPadding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Modern Reality: Risk and Opportunity"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#34495E"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/tv_intro_text_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;b&gt;In today’s dynamic world, risk is an inherent part of every aspect of life&lt;/b&gt;—from the stability of a job to the fluctuating nature of business. Employment security is no longer a given, and entrepreneurial ventures are constantly navigating uncertainties. Given this reality, isn’t it time to proactively plan for a resilient financial future through intelligent and forward-thinking investments?\n\nInvesting is not merely about accumulating wealth; it's about building a robust shield against unforeseen circumstances and creating avenues for sustained growth. MYNA offers you a clear path to achieve this, focusing on consistent, strategic monthly contributions."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp"
+        app:contentPadding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Why Traditional Investments Fall Short"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#C0392B"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/tv_traditional_text_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;b&gt;Relying solely on traditional investments that yield a modest 8%–10% annual return might no longer suffice in the current economic climate.&lt;/b&gt; By the time these returns materialize, their real purchasing power can be significantly diminished by inflation. Moreover, the critical drawback is often the lack of liquidity – when you need your funds most, they may remain locked in.\n\nThis can make annual returns feel less like genuine financial growth and more like a delayed, meager salary payment. MYNA understands these limitations and offers an alternative designed for speed and relevance in today's fast-paced world."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp"
+        app:contentPadding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Introducing Our Program: Smarter Investing, Faster Returns"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#27AE60"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/tv_program_text_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;b&gt;Through the MYNA app, you gain a unique opportunity to target significantly faster and more strategic returns.&lt;/b&gt; While investment inherently carries risk, we proactively mitigate this through a dynamic and diverse allocation strategy across multiple high-potential avenues:\n\n&lt;ul&gt;\n&lt;li&gt;&lt;b&gt;Popular, High-Performing Stocks:&lt;/b&gt; Investing in market leaders with strong short-term growth potential.&lt;/li&gt;\n&lt;li&gt;&lt;b&gt;Short-Term Trading Opportunities:&lt;/b&gt; Leveraging market fluctuations for quick gains.&lt;/li&gt;\n&lt;li&gt;&lt;b&gt;Chain Investors:&lt;/b&gt; Engaging with a network of experienced investors to amplify opportunities.&lt;/li&gt;\n&lt;li&gt;&lt;b&gt;Other Diversified Financial Services:&lt;/b&gt; Expanding our portfolio to include various strategic financial instruments and services.&lt;/li&gt;\n&lt;/ul&gt;\n\nThis multi-faceted approach aims to maximize your potential for monthly returns while spreading risk intelligently across different investment vehicles. We are constantly monitoring and adapting our strategies to market conditions."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp"
+        app:contentPadding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Intelligent Diversification Approach"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#3498DB"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/tv_approach_text_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;b&gt;This carefully designed approach is engineered to minimize potential losses and significantly elevate the probability of securing healthy profits.&lt;/b&gt; It's important to reiterate that all investments carry inherent risks; therefore, we strongly advise against investing capital that you cannot comfortably afford to lose. However, through our combination of expert fund management and intelligent, continuous diversification, the likelihood of achieving positive and consistent returns is substantially enhanced.\n\nOur team of financial experts continuously monitors market trends and rebalances the portfolio to adapt to changing conditions, ensuring your investment is always working intelligently. We strive to provide transparent insights into our strategies, offering you peace of mind."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp"
+        app:contentPadding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Your Journey: Small Steps, Big Growth"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#E67E22"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/tv_start_small_text_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;b&gt;Embark on your investment journey with MYNA by starting with an initial investment as modest as ₹100.&lt;/b&gt; This strategy is designed to keep your initial risk exceptionally low, while simultaneously providing you with valuable firsthand exposure to real market opportunities. As your confidence grows and you observe the potential unfolding, you’ll have the flexibility to scale up your investments incrementally, aligning with your comfort level and financial goals.\n\n&lt;i&gt;Important Note:&lt;/i&gt; A nominal 0.5% tax will be applicable exclusively on your generated returns – your principal investment remains untouched by this deduction. This ensures that the vast majority of your hard-earned profits are truly yours to keep, maximizing your net gains and facilitating faster wealth accumulation. We believe in transparency and maximizing your earnings."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp"
+        app:contentPadding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Effortless Investing: We Handle It All for You"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#8E44AD"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/tv_support_heading_des_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;b&gt;Forget the complexities of market research, constant tracking, and hands-on investment management. That’s precisely what the expert MYNA team is here for.&lt;/b&gt; Your role is simple: make your investment once through our streamlined service, and we diligently handle every subsequent step.\n\n&lt;i&gt;At the close of each month, you will transparently receive:&lt;/i&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;b&gt;Your Initial Invested Amount:&lt;/b&gt; Fully returned to you.&lt;/li&gt;\n&lt;li&gt;&lt;b&gt;Plus That Month’s Generated Return:&lt;/b&gt; Your profits from our strategic management.&lt;/li&gt;\n&lt;li&gt;&lt;b&gt;Minus a Nominal 0.5% Tax:&lt;/b&gt; This deduction is applied &lt;u&gt;only on the returns&lt;/u&gt;, ensuring your principal investment remains entirely intact.&lt;/li&gt;\n&lt;/ul&gt;\n\nIt's intelligent, straightforward, and entirely stress-free investing—meticulously designed for individuals who desire tangible financial results without the typical burdens of market engagement. Focus on your life, while we focus on growing your wealth efficiently and securely."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp"
+        app:contentPadding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We’re With You: Your Dedicated Wealth Journey Partner"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#3498DB"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/tv_support_text_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;b&gt;Our dedicated and experienced team at MYNA is committed to supporting you at every stage of your wealth-building journey.&lt;/b&gt; We believe that with consistent, smart investment, your portfolio will not only strengthen over time but also yield increasingly robust returns. Our philosophy extends beyond mere investment; it’s about fostering a strategy of consistent and wise financial engagement.\n\nWe are here to provide clear guidance, address your concerns, and ensure a seamless experience. As your confidence grows with visible results, you’ll find MYNA to be an invaluable partner in securing a brighter financial tomorrow. Let’s embark on this journey together—building a secure, smarter financial future, hand in hand."
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/invest_page_transport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start investment"
+        android:textStyle="bold"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/contact_us_footer_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="📞 Need More Details? Contact Us! For any questions about our services or future offerings, our support team is ready to assist you.MYNA – Team in Secure Investing Services 2025 | Smart Investment Solutions | Your Financial Partner"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        android:lineSpacingExtra="4dp"/>
+
+    <Space android:layout_width="match_parent" android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2025 MYNA "
+            android:textSize="14sp"
+            android:textColor="#555555" />
+
+        <TextView
+            android:id="@+id/footer_privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" | Privacy Policy"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            android:onClick="openPrivacyFromFooter" />
+
+        <TextView
+            android:id="@+id/footer_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" | Terms"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            android:onClick="openTermsFromFooter" />
+
+        <TextView
+            android:id="@+id/footer_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" | Support"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            android:onClick="openSupportFromFooter" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

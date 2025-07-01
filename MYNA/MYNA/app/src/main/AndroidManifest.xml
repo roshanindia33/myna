@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_log2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_log2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MYNA"
+        tools:targetApi="33">
+        <activity
+            android:name=".Doc.DevloperInfo"
+            android:exported="false" />
+        <activity
+            android:name=".servicepage.TrustPage"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.UpdateInfo"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.WithdrawActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doc.Support"
+            android:exported="false" />
+        <activity
+            android:name=".Doc.CopyWriteClaim"
+            android:exported="false" />
+        <activity
+            android:name=".Doc.About"
+            android:exported="false" />
+        <activity
+            android:name=".Doc.TermsConditions"
+            android:exported="false" />
+        <activity
+            android:name=".Doc.PrivacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".servicepage.InvestWithUs"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.UserAccountForm"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.UserAccount"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.ReturnHistory"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.UserPortfolio"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.News"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.Cart2MonthlyInvestment"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.Invest"
+            android:exported="false" />
+        <activity
+            android:name=".userdata.InvestCenter"
+            android:exported="false" /> <!-- Splash Activity (Launcher) -->
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:theme="@style/Theme.MYNA.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Warning Terms and Conditions Activity -->
+        <activity
+            android:name=".WarningTC"
+            android:exported="false" /> <!-- Login Activity -->
+        <activity
+            android:name=".Login"
+            android:exported="false" /> <!-- Signup Activity -->
+        <activity
+            android:name=".Signup"
+            android:exported="false" /> <!-- Dashboard Activity -->
+        <activity
+            android:name=".Dashboard"
+            android:exported="true"
+            android:theme="@style/Theme.MYNA.NoActionBar" />
+    </application>
+
+</manifest>

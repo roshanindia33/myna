@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bankaccount_background_gradient_light_blue_purple"
+    tools:context=".userdata.UserAccount">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="30dp"
+                android:paddingHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bankaccount_ic_account_gold"
+                    app:tint="@color/text_white_light"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Account Details"
+                    android:textColor="@color/text_white_light"
+                    android:textSize="26sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/card_background_white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/bankaccount_ic_email_dark"
+                        app:tint="@color/icon_dark_accent"
+                        android:layout_marginEnd="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Logged in as:"
+                            android:textColor="@color/text_medium_secondary"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/userEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="user@example.com"
+                            android:textColor="@color/text_dark_primary"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBankInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/card_background_white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:text="🏦 Your Bank Details"
+                        android:textColor="@color/text_dark_primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout style="@style/DetailRowStyle">
+
+                        <ImageView
+                            style="@style/DetailIconStyle"
+                            android:src="@drawable/bankaccount_ic_user_profile" />
+
+                        <TextView
+                            android:id="@+id/accountHolderName"
+                            style="@style/DetailTextStyle"
+                            tools:text="Account Holder: John Doe" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/DetailRowStyle">
+
+                        <ImageView
+                            style="@style/DetailIconStyle"
+                            android:src="@drawable/bankaccount_ic_bank_account" />
+
+                        <TextView
+                            android:id="@+id/accountNumber"
+                            style="@style/DetailTextStyle"
+                            tools:text="Account Number: XXXXXXXXXX" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/DetailRowStyle">
+
+                        <ImageView
+                            style="@style/DetailIconStyle"
+                            android:src="@drawable/bankaccount_ic_ifsc_code" />
+
+                        <TextView
+                            android:id="@+id/ifscCode"
+                            style="@style/DetailTextStyle"
+                            tools:text="IFSC Code: ABCDEF12345" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/DetailRowStyle">
+
+                        <ImageView
+                            style="@style/DetailIconStyle"
+                            android:src="@drawable/bankaccount_ic_bank_name" />
+
+                        <TextView
+                            android:id="@+id/bankName"
+                            style="@style/DetailTextStyle"
+                            tools:text="Bank Name: State Bank of India" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/DetailRowStyle">
+
+                        <ImageView
+                            style="@style/DetailIconStyle"
+                            android:src="@drawable/bankaccount_ic_branch" />
+
+                        <TextView
+                            android:id="@+id/branch"
+                            style="@style/DetailTextStyle"
+                            tools:text="Branch: Main Branch, Delhi" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/DetailRowStyle">
+
+                        <ImageView
+                            style="@style/DetailIconStyle"
+                            android:src="@drawable/bankaccount_ic_phone" />
+
+                        <TextView
+                            android:id="@+id/mobileNumber"
+                            style="@style/DetailTextStyle"
+                            tools:text="Mobile Number: +91 9876543210" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/DetailRowStyle">
+
+                        <ImageView
+                            style="@style/DetailIconStyle"
+                            android:src="@drawable/bankaccount_ic_upi_id" />
+
+                        <TextView
+                            android:id="@+id/upiId"
+                            style="@style/DetailTextStyle"
+                            tools:text="UPI ID: user@bank" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/DetailRowStyle">
+
+                        <ImageView
+                            style="@style/DetailIconStyle"
+                            android:src="@drawable/bankaccount_ic_pan_card" />
+
+                        <TextView
+                            android:id="@+id/panNumber"
+                            style="@style/DetailTextStyle"
+                            tools:text="PAN Number: ABCDE1234F" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/DetailRowStyleNoMargin">
+
+                        <ImageView
+                            style="@style/DetailIconStyle"
+                            android:src="@drawable/bankaccount_ic_aadhaar" />
+
+                        <TextView
+                            android:id="@+id/aadhaarNumber"
+                            style="@style/DetailTextStyle"
+                            tools:text="Aadhaar Number: XXXX XXXX XXXX" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/addBankAccountLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bankaccount_button_background_add_bank"
+                android:clickable="true"
+                android:drawableStart="@drawable/bankaccount_ic_add_bank_account"
+                android:drawablePadding="15dp"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingVertical="18dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="+ Add / Update Bank Account Details"
+                android:textColor="@color/button_text_add_bank"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

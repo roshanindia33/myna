@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bankaccount_background_gradient_light_blue_purple"
+    tools:context=".userdata.Invest">
+
+<ScrollView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:fillViewport="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        android:backgroundTint="@color/card_background_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <!-- Header Section within Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/invest_header_gradient_gold_blue"
+            android:paddingVertical="25dp"
+            android:paddingHorizontal="15dp"
+            android:clipToPadding="false"
+            android:translationY="-30dp"
+            android:layout_marginHorizontal="-30dp"
+            android:layout_marginTop="-30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/invest_ic_secure_payment"
+            android:layout_marginBottom="10dp"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secure Your Investment"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Path to Financial Growth"
+            android:textColor="#E0E0E0"
+            android:textSize="15sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- User Email / ID -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="25dp">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/invest_ic_user_email"
+        android:layout_marginEnd="8dp"
+        app:tint="@color/icon_color_dark" />
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="user@example.com"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark_primary"/>
+</LinearLayout>
+
+<!-- Amount Input Section -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter Your Investment Amount"
+    android:textColor="@color/text_dark_primary"
+    android:textSize="16sp"
+    android:textStyle="normal"
+    android:layout_marginBottom="12dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/invest_input_field_background"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="12dp"
+    android:layout_marginBottom="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹"
+        android:textColor="@color/text_dark_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="8dp"/>
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:hint="Minimum 500, Maximum 5 Lac"
+        android:inputType="numberDecimal"
+        android:textColor="@color/text_dark_primary"
+        android:textColorHint="@color/text_light_hint"
+        android:textSize="18sp"
+        android:singleLine="true"/>
+</LinearLayout>
+
+<!-- Validation / Info Text -->
+<TextView
+    android:id="@+id/validationMessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Amount must be between ₹500 and ₹5 Lac."
+    android:textColor="@color/text_info"
+    android:textSize="13sp"
+    android:layout_marginBottom="25dp"
+    tools:text="Amount must be between ₹100 and ₹5,00,000."/> <!-- For preview -->
+
+<!-- Important Information -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="&lt;b&gt;Processing Time:&lt;/b&gt; Your investment will be reflected in your portfolio within 2-3 business days. \n &lt;b&gt;Note:&lt;/b&gt; A nominal transaction fee (approx. 0.15% - 0.2%) may apply as per our terms &amp; conditions. Please review our detailed fee structure for more information."
+    android:textColor="@color/text_medium_secondary"
+    android:textSize="14sp"
+    android:lineSpacingExtra="4dp"
+    android:layout_marginBottom="35dp"
+    android:id="@+id/infoText" />
+
+<!-- Proceed Button -->
+<Button
+    android:id="@+id/proceedBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/invest_button_gradient_green_gold"
+    android:enabled="false"
+    android:text="Proceed to Payment"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:paddingVertical="16dp"
+    app:cornerRadius="12dp"
+    android:elevation="6dp"/>
+
+
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Footer / Trust Elements -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:text="&lt;b&gt;🔒 Secure Transactions &lt;/b&gt;| &lt;b&gt;💯 Verified Partners&lt;/b&gt; | &lt;b&gt;🤝 Your Trust, Our Priority&lt;/b&gt;"
+    android:textColor="@color/text_light_hint"
+    android:textSize="14sp"
+    android:textStyle="italic"
+    android:textAlignment="center"
+    android:lineSpacingExtra="4dp"
+    android:id="@+id/footer_trust_text"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

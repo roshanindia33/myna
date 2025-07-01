@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.myna.myna.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.myna.myna.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.myna.myna.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
+<!--new features added-->
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<navigation xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/mobile_navigation"-->
+<!--app:startDestination="@+id/nav_home">-->
+
+<!--<fragment-->
+<!--    android:id="@+id/nav_home"-->
+<!--    android:name="com.myna.myna.ui.home.HomeFragment"-->
+<!--    android:label="@string/menu_home"-->
+<!--    tools:layout="@layout/fragment_home" />-->
+<!--<fragment-->
+<!--    android:id="@+id/nav_smart_advisor"-->
+<!--    android:name="com.myna.myna.UniqueFeatures.SmartAdvisorFragment"-->
+<!--    android:label="@string/smart_advisor"-->
+<!--    tools:layout="@layout/fragment_smart_advisor" />-->
+<!--<fragment-->
+<!--    android:id="@+id/nav_ai_assistant"-->
+<!--    android:name="com.myna.myna.UniqueFeatures.AIAssistantFragment"-->
+<!--    android:label="@string/ai_assistant"-->
+<!--    tools:layout="@layout/fragment_ai_assistant" />-->
+<!--<fragment-->
+<!--    android:id="@+id/nav_help_center"-->
+<!--    android:name="com.myna.myna.Doc.HelpCenterFragment"-->
+<!--    android:label="@string/help_center"-->
+<!--    tools:layout="@layout/fragment_help_center" />-->
+<!--<activity-->
+<!--    android:id="@+id/nav_logout"-->
+<!--    android:name="com.myna.myna.LoginActivity"-->
+<!--    android:label="@string/logout" />-->
+
+<!--</navigation>-->

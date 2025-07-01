@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userdata.InvestCenter"
+    android:background="@drawable/bankaccount_background_gradient_light_blue_purple">
+    <ScrollView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:background="@drawable/investcenter_header_gradient_blue_purple" android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Investment Centre"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Empowering Your Financial Growth with MYNA"
+                    android:textColor="#E0E0E0"
+                    android:textSize="16sp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/investment_title_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📈 Maximize Your Monthly Returns"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark_primary"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tagline_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;b&gt;&lt;font color='#388E3C'&gt;Earn 5% to 15% Monthly Returns with Expert Guidance!&lt;/font&gt;&lt;/b&gt;"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/description_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_medium_secondary"
+                    android:textSize="15sp"
+                    android:text="&lt;p&gt;At MYNA Investment Centre, your financial growth is our paramount focus. Our dedicated team of &lt;b&gt;highly experienced professionals&lt;/b&gt; rigorously tracks and analyzes top-performing stocks each month. We meticulously select only those with a consistent track record of monthly growth and strong underlying fundamentals, ensuring your investments are always on the right path.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Your portfolio benefits from &lt;b&gt;active, expert management&lt;/b&gt;. If a stock deviates from expected performance, our proactive team swiftly reallocates your funds to more promising opportunities. This dynamic approach guarantees an &lt;b&gt;optimized portfolio&lt;/b&gt; specifically tailored to deliver maximum growth while meticulously minimizing risk exposure.&lt;/p&gt;"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🛡️ Our Transparent Risk Philosophy"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark_primary"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/risk_philosophy_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;p&gt;At MYNA, we believe in &lt;b&gt;complete transparency&lt;/b&gt; regarding investment risks. While all investments carry a degree of risk, we equip you with comprehensive tools and expert insights to navigate the market confidently. We strongly advise investing &lt;u&gt;only an amount you are comfortable with risking&lt;/u&gt;, especially as you begin your journey with us.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Our sophisticated algorithms and human expertise work in tandem to &lt;b&gt;proactively identify and mitigate potential risks&lt;/b&gt;, striving for the most secure investment environment possible. Your financial well-being is our priority, and we are committed to providing a platform where you can invest wisely and with informed decisions.&lt;/p&gt;"
+                    android:textColor="@color/text_medium_secondary"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🎯 New Feature: Personalized Investment Portfolios"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark_primary"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/personalized_portfolio_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;p&gt;Introducing our latest innovation: &lt;b&gt;AI-driven personalized portfolios!&lt;/b&gt; Based on your financial goals, risk tolerance, and investment horizon, MYNA will now craft a uniquely tailored investment strategy just for you. This ensures that every investment aligns perfectly with your individual aspirations, optimizing your path to financial freedom.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Our smart system continuously adapts to market changes and your evolving profile, offering &lt;b&gt;dynamic adjustments&lt;/b&gt; to keep your portfolio on track. This means less guesswork for you and more focus on what matters – achieving your dreams.&lt;/p&gt;"
+                    android:textColor="@color/text_medium_secondary"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/start_investment_proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Your Investment Journey!"
+            android:textStyle="bold"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:elevation="8dp"/>
+
+        <TextView
+            android:id="@+id/footer_note_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt;b&gt;🤝 Trusted by thousands&lt;/b&gt; | &lt;b&gt;📊 Backed by real analysts&lt;/b&gt; | &lt;b&gt;🇮🇳 Proudly Made in India&lt;/b&gt;"
+            android:textColor="@color/text_light_hint"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:lineSpacingExtra="4dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© 2025 MYNA "
+                android:textSize="14sp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/footer_privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | Privacy Policy"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                android:onClick="openPrivacyFromFooter" />
+
+            <TextView
+                android:id="@+id/footer_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | Terms"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                android:onClick="openTermsFromFooter" />
+
+            <TextView
+                android:id="@+id/footer_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | Support"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                android:onClick="openSupportFromFooter" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menuleft_ic_dashboard_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+    </group>
+
+    <item android:title="Exclusive Features">
+        <menu>
+            <item
+                android:id="@+id/nav_smart_advisor"
+                android:icon="@drawable/menuleft_ic_advisor_black_24dp"
+                android:visible="false"
+                android:title="@string/smart_advisor" />
+            <item
+                android:id="@+id/nav_ai_assistant"
+                android:icon="@drawable/menuleft_ic_ai_assistant_black_24dp"
+                android:visible="false"
+                android:title="@string/ai_assistant" />
+            <item
+                android:id="@+id/nav_virtual_portfolio"
+                android:icon="@drawable/menuleft_ic_virtual_portfolio_black_24dp"
+                android:visible="false"
+                android:title="@string/virtual_portfolio" />
+            <item
+                android:id="@+id/nav_learning_hub"
+                android:icon="@drawable/menuleft_ic_learning_hub_black_24dp"
+                android:visible="false"
+                android:title="@string/learning_hub" />
+        </menu>
+    </item>
+
+    <item android:title="Info &amp; Support">
+        <menu>
+            <item
+                android:id="@+id/nav_help_center"
+                android:icon="@drawable/menuleft_ic_help_center_black_24dp"
+                android:title="@string/help_center" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/menuleft_ic_feedback_black_24dp"
+                android:visible="false"
+                android:title="@string/send_feedback" />
+            <item
+                android:id="@+id/nav_invite_friends"
+                android:icon="@drawable/menuleft_ic_invite_friends_black_24dp"
+                android:visible="false"
+                android:title="@string/invite_friends" />
+            <item
+                android:id="@+id/nav_about_app"
+                android:icon="@drawable/menuleft_ic_about_app_black_24dp"
+                android:title="@string/about_app" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/menuleft_ic_logout_black_24dp"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>
