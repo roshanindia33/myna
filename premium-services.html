@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myna Premium Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .premium-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://placehold.co/1920x600/000080/FFFFFF?text=Premium+Background');
+            background-size: cover;
+            background-position: center;
+        }
+        .feature-card-premium {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 24px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card-premium:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Accordion Styles (copied from main page for consistency) */
+        .accordion-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background-color: #f3f4f6;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background-color: #e2e8f0;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 0 16px; /* Initial padding 0 */
+            margin-bottom: 8px;
+        }
+
+        .accordion-content.active {
+            max-height: 500px; /* Adjust as needed for content */
+            padding: 16px;
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Mobile Navigation (Hamburger) for Premium Page */
+        .mobile-menu-button-premium {
+            display: none; /* Hidden on desktop */
+        }
+
+        .mobile-menu-premium {
+            display: none; /* Hidden by default */
+            flex-direction: column;
+            background-color: #2c3e50; /* Dark background for mobile menu */
+            position: absolute;
+            top: 64px; /* Below header */
+            left: 0;
+            width: 100%;
+            padding: 1rem 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 999;
+        }
+
+        .mobile-menu-premium.active {
+            display: flex;
+        }
+
+        .mobile-menu-premium a {
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .mobile-menu-premium a:hover {
+            background-color: #4a5568;
+        }
+
+        @media (max-width: 1023px) { /* lg breakpoint for navigation */
+            header nav {
+                display: none; /* Hide desktop nav */
+            }
+            .mobile-menu-button-premium {
+                display: block; /* Show hamburger button */
+            }
+        }
+
+
+        /* Mobile specific adjustments for text and cards */
+        @media (max-width: 767px) { /* For screens smaller than md (768px) */
+            h1 {
+                font-size: 2.5rem; /* Smaller on mobile */
+            }
+            .text-2xl {
+                font-size: 1.25rem; /* Smaller sub-headline */
+            }
+            .text-xl {
+                font-size: 1.1rem; /* Smaller general text */
+            }
+            .text-lg {
+                font-size: 1rem; /* Smaller body text */
+            }
+            .text-base {
+                font-size: 0.9rem; /* Even smaller text */
+            }
+            .text-sm {
+                font-size: 0.8rem; /* Smallest text */
+            }
+
+            .feature-card-premium {
+                padding: 16px; /* Smaller padding */
+            }
+            .feature-card-premium h3 {
+                font-size: 1.1rem; /* Smaller headings */
+            }
+            .feature-card-premium p {
+                font-size: 0.9rem; /* Smaller text */
+            }
+
+            .pricing-card {
+                padding: 20px; /* Smaller padding */
+            }
+            .pricing-card h3 {
+                font-size: 2rem; /* Smaller pricing headings */
+            }
+            .pricing-card p.text-5xl {
+                font-size: 3rem; /* Smaller price */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gray-900 text-white py-4 px-6 shadow-lg flex justify-between items-center">
+        <div class="text-3xl font-extrabold text-teal-400">Myna Premium</div>
+        <!-- Mobile Menu Button for Premium Page -->
+        <button class="mobile-menu-button-premium text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+        <nav class="hidden lg:flex">
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-gray-300 hover:text-teal-400 font-medium transition duration-300">Home</a></li>
+                <li><a href="#pricing" class="text-gray-300 hover:text-teal-400 font-medium transition duration-300">Pricing</a></li>
+                <li><a href="#faq-premium" class="text-gray-300 hover:text-teal-400 font-medium transition duration-300">FAQ</a></li>
+                <li><a href="index.html#contact" class="text-gray-300 hover:text-teal-400 font-medium transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay for Premium Page -->
+    <div class="mobile-menu-premium" id="mobile-menu-premium">
+        <a href="index.html">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq-premium">FAQ</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+
+    <!-- Premium Hero Section -->
+    <section class="relative overflow-hidden premium-hero text-white py-24 px-4 text-center rounded-b-xl shadow-inner" style="background:none;">
+        <!-- SVG Space Battle Animated Background -->
+        <div aria-hidden="true" class="absolute inset-0 w-full h-full pointer-events-none z-0">
+            <svg width="100%" height="100%" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg" style="background-color: #0A0A1A; width:100%; height:100%; display:block;">
+                <style>
+                    @keyframes star-move-slow {
+                        from { transform: translate(0, 0); }
+                        to { transform: translate(-1000px, 600px); }
+                    }
+                    @keyframes star-move-medium {
+                        from { transform: translate(0, 0); }
+                        to { transform: translate(1000px, -600px); }
+                    }
+                    @keyframes star-move-fast {
+                        from { transform: translate(0, 0); }
+                        to { transform: translate(-1500px, -900px); }
+                    }
+                    @keyframes asteroid-move {
+                        0% { transform: translate(1000px, 100px) rotate(0deg); opacity: 0.8; }
+                        100% { transform: translate(-200px, 500px) rotate(360deg); opacity: 0.5; }
+                    }
+                    @keyframes asteroid-move-2 {
+                        0% { transform: translate(-200px, 400px) rotate(0deg); opacity: 0.7; }
+                        100% { transform: translate(1000px, 0px) rotate(-360deg); opacity: 0.4; }
+                    }
+                    @keyframes spaceship-path-1 {
+                        0% { transform: translate(0, 300px); }
+                        25% { transform: translate(200px, 250px); }
+                        50% { transform: translate(400px, 300px); }
+                        75% { transform: translate(600px, 250px); }
+                        100% { transform: translate(800px, 300px); }
+                    }
+                    @keyframes spaceship-path-2 {
+                        0% { transform: translate(1000px, 200px); }
+                        25% { transform: translate(800px, 250px); }
+                        50% { transform: translate(600px, 200px); }
+                        75% { transform: translate(400px, 250px); }
+                        100% { transform: translate(200px, 200px); }
+                    }
+                    @keyframes laser-fire {
+                        0% { opacity: 1; transform: scaleX(0); }
+                        10% { opacity: 1; transform: scaleX(1); }
+                        20% { opacity: 0; transform: scaleX(1); }
+                        100% { opacity: 0; transform: scaleX(0); }
+                    }
+                    @keyframes explosion {
+                        0% { r: 0; opacity: 1; }
+                        100% { r: 50px; opacity: 0; }
+                    }
+                    @keyframes glow {
+                        0% { opacity: 0.5; }
+                        50% { opacity: 1; }
+                        100% { opacity: 0.5; }
+                    }
+                    .star-slow { animation: star-move-slow 120s linear infinite; }
+                    .star-medium { animation: star-move-medium 80s linear infinite; }
+                    .star-fast { animation: star-move-fast 60s linear infinite; }
+                    .asteroid-animated-1 { animation: asteroid-move 90s linear infinite; }
+                    .asteroid-animated-2 { animation: asteroid-move-2 110s linear infinite; }
+                    .spaceship-1 { animation: spaceship-path-1 20s linear infinite alternate; }
+                    .spaceship-2 { animation: spaceship-path-2 25s linear infinite alternate; }
+                    .laser-1 { animation: laser-fire 2s linear infinite 5s; transform-origin: left center; }
+                    .laser-2 { animation: laser-fire 2s linear infinite 7s; transform-origin: right center; }
+                    .explosion-effect { animation: explosion 1s ease-out infinite; }
+                    .glow-effect { animation: glow 3s ease-in-out infinite alternate; }
+                    /* Responsive SVG for mobile */
+                    @media (max-width: 767px) {
+                        svg { min-height: 340px !important; }
+                    }
+                </style>
+                <!-- Stars -->
+                <circle cx="100" cy="50" r="1.5" fill="#FFFFFF" opacity="0.8" class="star-slow"/>
+                <circle cx="250" cy="150" r="1" fill="#FFFFFF" opacity="0.7" class="star-slow"/>
+                <circle cx="400" cy="20" r="2" fill="#FFFFFF" opacity="0.9" class="star-slow"/>
+                <circle cx="550" cy="250" r="1.5" fill="#FFFFFF" opacity="0.8" class="star-slow"/>
+                <circle cx="700" cy="80" r="1" fill="#FFFFFF" opacity="0.6" class="star-slow"/>
+                <circle cx="850" cy="300" r="2" fill="#FFFFFF" opacity="0.9" class="star-slow"/>
+                <circle cx="950" cy="100" r="1.5" fill="#FFFFFF" opacity="0.7" class="star-slow"/>
+                <circle cx="50" cy="300" r="2" fill="#FFFFEE" opacity="0.9" class="star-medium"/>
+                <circle cx="200" cy="450" r="1.5" fill="#FFFFEE" opacity="0.8" class="star-medium"/>
+                <circle cx="350" cy="500" r="2.5" fill="#FFFFEE" opacity="1" class="star-medium"/>
+                <circle cx="500" cy="350" r="1.5" fill="#FFFFEE" opacity="0.7" class="star-medium"/>
+                <circle cx="650" cy="550" r="2" fill="#FFFFEE" opacity="0.9" class="star-medium"/>
+                <circle cx="800" cy="400" r="1" fill="#FFFFEE" opacity="0.6" class="star-medium"/>
+                <circle cx="900" cy="500" r="2.5" fill="#FFFFEE" opacity="1" class="star-medium"/>
+                <circle cx="150" cy="100" r="3" fill="#FFFFAA" opacity="0.9" class="star-fast"/>
+                <circle cx="300" cy="50" r="2.5" fill="#FFFFAA" opacity="0.8" class="star-fast"/>
+                <circle cx="450" cy="150" r="3.5" fill="#FFFFAA" opacity="1" class="star-fast"/>
+                <circle cx="600" cy="20" r="2.5" fill="#FFFFAA" opacity="0.7" class="star-fast"/>
+                <circle cx="750" cy="120" r="3" fill="#FFFFAA" opacity="0.9" class="star-fast"/>
+                <!-- Asteroids -->
+                <g class="asteroid-animated-1">
+                    <path d="M50 0 L70 10 L60 30 L30 40 L10 20 Z" fill="#5A5A5A" stroke="#3A3A3A" stroke-width="2"/>
+                    <circle cx="30" cy="15" r="5" fill="#4A4A4A"/>
+                </g>
+                <g class="asteroid-animated-2">
+                    <path d="M0 20 L20 0 L40 10 L30 30 L10 40 Z" fill="#6A6A6A" stroke="#4A4A4A" stroke-width="2"/>
+                    <circle cx="25" cy="25" r="7" fill="#5A5A5A"/>
+                </g>
+                <!-- Spaceship 1 -->
+                <g class="spaceship-1">
+                    <polygon points="100,200 120,230 80,230" fill="#3498DB" stroke="#2980B9" stroke-width="2"/>
+                    <rect x="95" y="220" width="10" height="15" fill="#2980B9"/>
+                    <circle cx="100" cy="238" r="5" fill="#ADD8E6" class="glow-effect"/>
+                    <rect x="100" y="210" width="0" height="3" fill="#FF0000" class="laser-1"/>
+                </g>
+                <!-- Spaceship 2 -->
+                <g class="spaceship-2">
+                    <polygon points="900,200 880,230 920,230" fill="#E74C3C" stroke="#C0392B" stroke-width="2"/>
+                    <rect x="895" y="220" width="10" height="15" fill="#C0392B"/>
+                    <circle cx="900" cy="238" r="5" fill="#FFB6C1" class="glow-effect"/>
+                    <rect x="900" y="210" width="0" height="3" fill="#00FF00" class="laser-2" style="transform-origin: right center;"/>
+                </g>
+                <!-- Explosion Effect -->
+                <g transform="translate(500, 300)">
+                    <circle cx="0" cy="0" r="0" fill="#FFA500" opacity="0" class="explosion-effect" style="animation-delay: 10s;"/>
+                    <circle cx="0" cy="0" r="0" fill="#FFD700" opacity="0" class="explosion-effect" style="animation-delay: 10.2s;"/>
+                </g>
+            </svg>
+        </div>
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                Elevate Your Investments with <span class="text-blue-400">Myna Premium</span>
+            </h1>
+            <p class="text-xl md:text-3xl mb-10 opacity-90">
+                Unlock exclusive tools, expert insights, and priority support for unparalleled financial growth.
+            </p>
+            <a href="#pricing" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full shadow-xl transition duration-300 transform hover:scale-105">
+                View Pricing Plans
+            </a>
+        </div>
+        <style>
+            /* Ensure section min-height for mobile/desktop */
+            @media (max-width: 767px) {
+                .premium-hero {
+                    min-height: 340px;
+                    padding-top: 4rem;
+                    padding-bottom: 4rem;
+                }
+            }
+            @media (min-width: 768px) {
+                .premium-hero {
+                    min-height: 500px;
+                }
+            }
+            .premium-hero {
+                position: relative;
+                z-index: 1;
+            }
+            .premium-hero > .absolute {
+                z-index: 0;
+            }
+            .premium-hero > .relative {
+                z-index: 10;
+            }
+        </style>
+    </section>
+
+    <!-- Premium Features Detailed Section -->
+    <section id="premium-features-detailed" class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-900">What You Get with Myna Premium</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card-premium">
+                    <i class="fas fa-chart-area text-4xl md:text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Real-time Advanced Analytics</h3>
+                    <p class="text-base text-gray-700">Gain deeper insights into your portfolio's performance with real-time data, predictive analytics, and customizable reports. Understand market trends and make informed decisions faster.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card-premium">
+                    <i class="fas fa-user-tie text-4xl md:text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Dedicated Financial Advisor</h3>
+                    <p class="text-base text-gray-700">Get personalized one-on-one consultations with SEBI-certified financial advisors. Receive tailored investment strategies and guidance to achieve your specific financial goals.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card-premium">
+                    <i class="fas fa-life-ring text-4xl md:text-5xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">24/7 Priority Support</h3>
+                    <p class="text-base text-gray-700">Experience unparalleled customer service with 24/7 priority access via phone, dedicated chat, and email. Your queries are our top priority.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card-premium">
+                    <i class="fas fa-lightbulb text-4xl md:text-5xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Exclusive Investment Opportunities</h3>
+                    <p class="text-base text-gray-700">Access curated, high-potential investment avenues not available to standard users, including early access to certain funds and unique market insights.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="feature-card-premium">
+                    <i class="fas fa-file-invoice-dollar text-4xl md:text-5xl text-yellow-600 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Automated Tax Optimization</h3>
+                    <p class="text-base text-gray-700">Leverage smart tools that help you optimize your tax liabilities automatically. Get personalized tax-saving recommendations and simplified tax reporting.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="feature-card-premium">
+                    <i class="fas fa-graduation-cap text-4xl md:text-5xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Advanced Learning Hub</h3>
+                    <p class="text-base text-gray-700">Participate in exclusive webinars, workshops, and masterclasses led by industry veterans. Deepen your financial knowledge and refine your investment skills.</p>
+                </div>
+                <!-- Feature 7 -->
+                <div class="feature-card-premium">
+                    <i class="fas fa-bell text-4xl md:text-5xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Customizable Alerts & Notifications</h3>
+                    <p class="text-base text-gray-700">Set up personalized alerts for market movements, portfolio changes, and investment opportunities. Stay informed without constant monitoring.</p>
+                </div>
+                <!-- Feature 8 -->
+                <div class="feature-card-premium">
+                    <i class="fas fa-sync-alt text-4xl md:text-5xl text-pink-600 mb-4"></i>
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Automated Rebalancing</h3>
+                    <p class="text-base text-gray-700">Our smart algorithms automatically rebalance your portfolio to maintain your desired risk level and optimize for consistent returns, saving you time and effort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 px-4 bg-gray-100">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-900">Choose Your Myna Premium Plan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Plan 1: Monthly -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-500 pricing-card">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Monthly Plan</h3>
+                    <p class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-6">₹499<span class="text-lg md:text-xl text-gray-600">/month</span></p>
+                    <ul class="text-left text-gray-700 text-base space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Advanced Portfolio Analytics</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Personalized Advisory (1 session/month)</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Priority Customer Support</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Exclusive Investment Opportunities</li>
+                        <li class="flex items-center"><i class="fas fa-times-circle text-red-500 mr-2"></i> Automated Tax Optimization</li>
+                        <li class="flex items-center"><i class="fas fa-times-circle text-red-500 mr-2"></i> Advanced Learning Hub Access</li>
+                    </ul>
+                    <button onclick="openRazorpayPayment(49900, 'Monthly Premium')" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                        Get Monthly Plan
+                    </button>
+                </div>
+
+                <!-- Plan 2: Annual (Recommended) -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-500 relative pricing-card">
+                    <div class="absolute -top-4 right-4 bg-teal-500 text-white text-sm font-bold px-4 py-1 rounded-full shadow-md">Recommended</div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Annual Plan</h3>
+                    <p class="text-4xl md:text-5xl font-extrabold text-teal-600 mb-6">₹4999<span class="text-lg md:text-xl text-gray-600">/year</span></p>
+                    <p class="text-sm text-gray-500 mb-4">(Save ₹989 annually!)</p>
+                    <ul class="text-left text-gray-700 text-base space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> All Monthly Plan Features</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Unlimited Personalized Advisory Sessions</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Automated Tax Optimization</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Full Access to Advanced Learning Hub</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Customizable Alerts & Automated Rebalancing</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Dedicated Account Manager</li>
+                    </ul>
+                    <button onclick="openRazorpayPayment(499900, 'Annual Premium')" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                        Get Annual Plan
+                    </button>
+                </div>
+            </div>
+
+            <!-- New Individual Premium Services for purchase -->
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mt-16 mb-8">Individual Premium Services</h3>
+            <p class="text-base text-gray-700 mb-10">Enhance your investment journey with specific services tailored to your needs.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-orange-500 pricing-card">
+                    <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Market Insights Report</h4>
+                    <p class="text-3xl font-extrabold text-orange-600 mb-4">₹299<span class="text-base text-gray-600">/report</span></p>
+                    <p class="text-sm text-gray-700 mb-6">Get a comprehensive, in-depth market analysis report delivered monthly. Essential for informed decision-making.</p>
+                    <button onclick="openRazorpayPayment(29900, 'Market Insights Report')" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                        Buy Report
+                    </button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-pink-500 pricing-card">
+                    <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Goal Planning Session</h4>
+                    <p class="text-3xl font-extrabold text-pink-600 mb-4">₹499<span class="text-base text-gray-600">/session</span></p>
+                    <p class="text-sm text-gray-700 mb-6">A one-on-one session with a financial advisor to create a personalized goal-based investment plan.</p>
+                    <button onclick="openRazorpayPayment(49900, 'Goal Planning Session')" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                        Book Session
+                    </button>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500 pricing-card">
+                    <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3">Tax Advisory Call</h4>
+                    <p class="text-3xl font-extrabold text-cyan-600 mb-4">₹399<span class="text-base text-gray-600">/call</span></p>
+                    <p class="text-sm text-gray-700 mb-6">Consult with our tax experts for personalized advice on optimizing your investment taxes.</p>
+                    <button onclick="openRazorpayPayment(39900, 'Tax Advisory Call')" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                        Get Tax Advice
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium FAQ Section -->
+    <section id="faq-premium" class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Premium Plan FAQs</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What is the difference between free and Premium Myna?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text-base text-gray-700">The free version of Myna provides basic investment tracking and access to standard investment options. Myna Premium unlocks advanced analytics, personalized advisory, priority support, exclusive opportunities, and tax optimization tools designed for more serious investors seeking accelerated growth and a consistent monthly income stream.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can I switch between monthly and annual plans?</span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="text-base text-gray-700">Yes, you can upgrade from a monthly to an annual plan at any time. Your remaining monthly subscription value will be adjusted against the annual plan fee. Downgrading from annual to monthly will take effect at the end of your current annual billing cycle, ensuring flexibility for your financial planning.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="accordion-header">
+                    <span>What kind of financial advisory can I expect?</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p class="text-base text-gray-700">Our financial advisors are SEBI-certified professionals who provide personalized investment advice based on your risk appetite, financial goals, and market conditions. They can help you craft a tailored portfolio, review existing investments, and guide you through complex financial decisions, ensuring your investments align with your aspirations.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="accordion-header">
+                    <span>Is there a refund policy for Premium subscriptions?</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p class="text-base text-gray-700">Our refund policy for Premium subscriptions is detailed in our Terms & Conditions. Generally, refunds are processed based on usage and the remaining subscription period. Please refer to the full policy for specific terms and conditions regarding cancellations and refunds, ensuring transparency and clarity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section (Same as main page for consistency) -->
+    <footer id="contact" class="bg-gray-900 text-gray-300 py-10 px-4 text-center rounded-t-xl">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#features" class="hover:text-teal-400 transition duration-300">Features</a></li>
+                        <li><a href="index.html#how-it-works" class="hover:text-teal-400 transition duration-300">How It Works</a></li>
+                        <li><a href="#premium" class="hover:text-teal-400 transition duration-300">Myna Premium</a></li>
+                        <li><a href="index.html#testimonials" class="hover:text-teal-400 transition duration-300">Testimonials</a></li>
+                        <li><a href="index.html#growth-story" class="hover:text-teal-400 transition duration-300">Growth Story</a></li>
+                        <li><a href="index.html#team" class="hover:text-teal-400 transition duration-300">Our Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Legal & Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="privacy-policy.html" class="hover:text-teal-400 transition duration-300">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="hover:text-teal-400 transition duration-300">Terms & Conditions</a></li>
+                        <li><a href="refund-policy.html" class="hover:text-teal-400 transition duration-300">Refund Policy</a></li>
+                        <li><a href="mailto:support@mynaapp.com" class="hover:text-teal-400 transition duration-300">Email Support</a></li>
+                        <li><a href="#faq-premium" class="hover:text-teal-400 transition duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Contact Us</h3>
+                    <p class="mb-2"><i class="fas fa-envelope mr-2 text-teal-400"></i> myna.helpdesk@gmail.com</p>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2 text-teal-400"></i> Hamirpur- 210301, Uttar Pradesh, India</p>
+                    <p class="mb-2"><i class="fas fa-phone mr-2 text-teal-400"></i> [India +91 8076685656]</p>
+                    <div class="flex justify-center space-x-4 mt-4">
+                        <a href="https://facebook.com/yourmynaapp" target="_blank" class="text-gray-400 hover:text-teal-400 transition duration-300"><i class="fab fa-facebook-f text-2xl"></i></a>
+                        <a href="https://twitter.com/yourmynaapp" target="_blank" class="text-gray-400 hover:text-teal-400 transition duration-300"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="https://linkedin.com/company/yourmynaapp" target="_blank" class="text-gray-400 hover:text-teal-400 transition duration-300"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                        <a href="https://youtube.com/yourmynaapp" target="_blank" class="text-gray-400 hover:text-teal-400 transition duration-300"><i class="fab fa-youtube text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+             <p class="mt-8 text-gray-500 text-sm">For payment-related policies, please refer to these terms provided by Razorpay:
+                    <span onclick="window.location.href='https://merchant.razorpay.com/policy/QiXPbsLbbqeMnd/terms';"
+                    style="cursor: pointer; color: #5491e2; text-decoration: underline; font-weight: 600; padding: 0.2rem 0.4rem; border-radius: 0.25rem; transition: background-color 0.3s ease;"
+                    onmouseover="this.style.color='#ffffff';"
+                    onmouseout="this.style.color='#5491e2';">
+                    Terms and Conditions
+                </span>, and
+                <span onclick="window.location.href='https://merchant.razorpay.com/policy/QiXPbsLbbqeMnd/refund';"
+                    style="cursor: pointer; color: #5491e2; text-decoration: underline; font-weight: 600; padding: 0.2rem 0.4rem; border-radius: 0.25rem; transition: background-color 0.3s ease;"
+                    onmouseover="this.style.color='#ffffff';"
+                    onmouseout="this.style.color='#5491e2';">
+                    Cancellation and Refund Policy
+                </span>.</p>
+            <p class="mt-2 text-gray-500 text-sm">&copy; 2025 MYNAA Investment App. All rights reserved. MYNAA Financial Solutions Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Section -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        // Accordion Logic for FAQ (copied from main page)
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionContent = header.nextElementSibling;
+                const accordionIcon = header.querySelector('.accordion-icon');
+
+                // Close other open accordions
+                document.querySelectorAll('.accordion-content.active').forEach(content => {
+                    if (content !== accordionContent) {
+                        content.classList.remove('active');
+                        content.previousElementSibling.classList.remove('active');
+                        content.previousElementSibling.querySelector('.accordion-icon').style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Toggle current accordion
+                accordionContent.classList.toggle('active');
+                header.classList.toggle('active');
+                if (accordionContent.classList.contains('active')) {
+                    accordionIcon.style.transform = 'rotate(180deg)';
+                } else {
+                    accordionIcon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Razorpay integration for Premium Services Page
+        function openRazorpayPayment(amountInPaise, descriptionText) {
+            if (typeof Razorpay === 'undefined') {
+                alert("Razorpay script not loaded. Please ensure your internet connection is stable or contact support.");
+                return;
+            }
+
+            var options = {
+                "key": "YOUR_RAZORPAY_LIVE_API_KEY_HERE", // Replace with your Live key after approval
+                "amount": amountInPaise,
+                "currency": "INR",
+                "name": "MYNAA App Premium",
+                "description": descriptionText,
+                "image": "https://placehold.co/100x100/e0f2f7/2c3e50?text=Myna+Logo", // Placeholder for Myna logo
+                "handler": function (response){
+                    alert("Payment Successful! Payment ID: " + response.razorpay_payment_id + ". Thank you for purchasing " + descriptionText + "! Your premium features will be activated shortly.");
+                    // Here you would typically make an API call to your backend
+                    // to activate the user's premium subscription.
+                    console.log("Payment details:", response);
+                },
+                "prefill": {
+                    "name": "Customer Name", // Dynamically fill from user's login info if available
+                    "email": "customer@example.com", // Dynamically fill from user's login info
+                    "contact": "9999999999" // Dynamically fill from user's login info
+                },
+                "theme": {
+                    "color": "#0d6efd"
+                },
+                "modal": {
+                    "ondismiss": function() {
+                        console.log("Payment modal dismissed.");
+                        // Handle dismissal, e.g., show a message to the user
+                    }
+                }
+            };
+            var rzp = new Razorpay(options);
+            rzp.open();
+        }
+
+        // Mobile Menu Toggle for Premium Page
+        const mobileMenuButtonPremium = document.querySelector('.mobile-menu-button-premium');
+        const mobileMenuPremium = document.getElementById('mobile-menu-premium');
+
+        mobileMenuButtonPremium.addEventListener('click', () => {
+            mobileMenuPremium.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenuPremium.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuPremium.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
